@@ -1,0 +1,47 @@
+male-jump-real.ogg
+
+Source: Jumping man sounds — jumppp11.ogg
+Author: IgnasD
+License: CC0 1.0 Universal (public domain dedication)
+Source page: https://opengameart.org/content/jumping-man-sounds
+Original archive: https://opengameart.org/sites/default/files/JumpSoundsMan.zip
+License text: https://creativecommons.org/publicdomain/zero/1.0/
+
+The source page explicitly lists this asset under CC0.
+
+
+male-hey-real.mp3 (unused alternative)
+
+Source: Male_Heyyy_01
+Author: Artmasterrich
+License: Creative Commons 0 (CC0)
+Source page: https://freesound.org/people/Artmasterrich/sounds/345431/
+Audio preview: https://cdn.freesound.org/previews/345/345431_4038846-lq.mp3
+
+The source page explicitly labels this recording Creative Commons 0.
+
+
+child-jump-real.flac (unused alternative)
+
+Source: Jump Sounds — jumps-soundsx04.flac
+Author: rudy85
+License: CC0
+Source page: https://opengameart.org/content/jump-sounds
+Original archive: https://opengameart.org/sites/default/files/jumpsoundsx.7z
+
+The source page labels the pack CC0 and tags it Kids. Playback is trimmed to the first 0.85 seconds and reduced in volume.
+
+
+young-boy-hey.mp3 (currently used)
+
+Source: young boy saying Hey clearly
+Author: SkyRaeVoicing
+License: Creative Commons 0 (shown in CC0-filtered source results)
+Source page: https://freesound.org/people/SkyRaeVoicing/sounds/363588/
+Audio preview: https://cdn.freesound.org/previews/363/363588_6695178-lq.mp3
+
+Natural playback rate; trimmed to the first 0.9 seconds.
+
+Game-ready derivatives of the CC0 recordings:
+- young-boy-hey-clean.wav: 0.9 seconds, peak-normalized to 0.22, 15 ms end fade.
+- male-jump-effort-clean.wav: 0.32 seconds, peak-normalized to 0.30, 15 ms end fade.

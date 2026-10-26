@@ -1,0 +1,163 @@
+{
+  "colorSpace": {
+    "color": "srgb",
+    "normalGL": "linear",
+    "orm": "linear; R=AO G=Roughness B=Metalness"
+  },
+  "materials": [
+    {
+      "model": "lower-cabinet.glb",
+      "kind": "wood",
+      "originalBaseColorSize": [
+        2048,
+        2048
+      ],
+      "runtimeColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeDataSize": [
+        512,
+        512
+      ],
+      "uv": "original UV0; no geometry or UV edits",
+      "color": "lower-cabinet-color.jpg",
+      "normalGL": "lower-cabinet-normal.jpg",
+      "orm": "lower-cabinet-orm.jpg",
+      "ao": "scanned AO",
+      "pageMaskApproximate": false
+    },
+    {
+      "model": "writing-desk.glb",
+      "kind": "wood",
+      "originalBaseColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeDataSize": [
+        512,
+        512
+      ],
+      "uv": "original UV0; no geometry or UV edits",
+      "color": "writing-desk-color.jpg",
+      "normalGL": "writing-desk-normal.jpg",
+      "orm": "writing-desk-orm.jpg",
+      "ao": "scanned AO",
+      "pageMaskApproximate": false
+    },
+    {
+      "model": "wooden-chair.glb",
+      "kind": "wood",
+      "originalBaseColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeDataSize": [
+        512,
+        512
+      ],
+      "uv": "original UV0; no geometry or UV edits",
+      "color": "wooden-chair-color.jpg",
+      "normalGL": "wooden-chair-normal.jpg",
+      "orm": "wooden-chair-orm.jpg",
+      "ao": "scanned AO",
+      "pageMaskApproximate": false
+    },
+    {
+      "model": "antique-book-stack.glb",
+      "kind": "book",
+      "originalBaseColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeDataSize": [
+        512,
+        512
+      ],
+      "uv": "original UV0; no geometry or UV edits",
+      "color": "antique-book-stack-color.jpg",
+      "normalGL": "antique-book-stack-normal.jpg",
+      "orm": "antique-book-stack-orm.jpg",
+      "ao": "neutral; geometry contact shadows retained",
+      "pageMaskApproximate": true
+    },
+    {
+      "model": "fallen-library.glb",
+      "kind": "book",
+      "originalBaseColorSize": [
+        2048,
+        2048
+      ],
+      "runtimeColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeDataSize": [
+        512,
+        512
+      ],
+      "uv": "original UV0; no geometry or UV edits",
+      "color": "fallen-library-color.jpg",
+      "normalGL": "fallen-library-normal.jpg",
+      "orm": "fallen-library-orm.jpg",
+      "ao": "neutral; geometry contact shadows retained",
+      "pageMaskApproximate": true
+    },
+    {
+      "model": "crumpled-paper.glb",
+      "kind": "paper",
+      "originalBaseColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeDataSize": [
+        512,
+        512
+      ],
+      "uv": "original UV0; no geometry or UV edits",
+      "color": "crumpled-paper-color.jpg",
+      "normalGL": "crumpled-paper-normal.jpg",
+      "orm": "crumpled-paper-orm.jpg",
+      "ao": "neutral; geometry contact shadows retained",
+      "pageMaskApproximate": false
+    },
+    {
+      "model": "candelabrum.glb",
+      "kind": "metal",
+      "originalBaseColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeColorSize": [
+        1024,
+        1024
+      ],
+      "runtimeDataSize": [
+        512,
+        512
+      ],
+      "uv": "original UV0; no geometry or UV edits",
+      "color": "candelabrum-color.jpg",
+      "normalGL": "candelabrum-normal.jpg",
+      "orm": "candelabrum-orm.jpg",
+      "ao": "scanned AO",
+      "pageMaskApproximate": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+Toy train ride recording
+
+Title: The Little Stereo Engine That Could
+Original author: Dartcheff (Freesound)
+Original source: https://freesound.org/people/Dartcheff/sounds/464998/
+Download source: https://creazilla.com/media/audio/15460128/the-little-stereo-engine-that-could
+Original audio: https://cdn.creazilla.com/sounds/15460128/the-little-stereo-engine-that-could-sound.flac
+License: Creative Commons 0 (CC0), public domain
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+
+Description from the original recording: a battery-powered toy train car running
+in circles on its plastic track, recorded with a Zoom H4n.
+
+Whistle title: Toys Toy Train Whistle (original Freesound title: Toy Train Whistle Soft.aif)
+Whistle author: timgormly (Freesound)
+Whistle source: https://freesound.org/people/timgormly/sounds/162817/
+Whistle download: https://creazilla.com/media/audio/15399870/toys-toy-train-whistle
+Whistle license: Creative Commons 0 (CC0), public domain
+
+Game edit: converted the original stereo recordings to mono, selected a stable
+15-second section of continuous travel, and reduced the travel level. A real toy
+whistle is trimmed to 1.65 seconds with a short fade, played at 0.16 seconds for
+departure and repeated more quietly at 13.18 seconds for station arrival.
+No synthesized motor, rail clicks, whistle, or music was added.

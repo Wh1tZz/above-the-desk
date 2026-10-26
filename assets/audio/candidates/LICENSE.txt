@@ -1,0 +1,8 @@
+The only footstep recording used by the game.
+
+new-footstep-04-running-wood.mp3
+Footsteps while running on wood — florianreichelt
+License: Creative Commons 0 (CC0), shown on the source page.
+Source: https://freesound.org/people/florianreichelt/sounds/459965/
+Preview: https://cdn.freesound.org/previews/459/459965_6253486-hq.mp3
+Downloaded from Freesound on 2026-10-25.

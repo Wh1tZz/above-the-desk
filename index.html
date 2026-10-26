@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b12" />
+    <meta name="description" content="书桌之上——原创电影化微型探索游戏" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23080b12'/%3E%3Cpath d='M13 45h38M18 41V21h28v20M24 26h16M24 32h12' stroke='%23d5b477' stroke-width='4' fill='none'/%3E%3C/svg%3E" />
+    <title>书桌之上 · Above the Desk</title>
+    <style>
+      html,body,#app{margin:0;width:100%;height:100%;overflow:hidden;background:#070a10;color:#f3eee5}
+      .hidden{display:none!important}.screen{position:fixed;inset:0;visibility:hidden}.screen.visible{visibility:visible}
+      .loading{position:fixed;inset:0;z-index:40;background:#070a10}
+    </style>
+    <link rel="preload" href="./fonts/DeskSerifSC.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="./fonts/DeskSerifEN.woff" as="font" type="font/woff" crossorigin />
+    <script type="module" crossorigin src="./assets/index-BOEbFhZ2.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BGJR9c_E.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game" aria-label="书桌之上 3D 游戏画面"></canvas>
+      <div class="grain"></div><div class="vignette"></div>
+      <section id="start" class="screen visible" aria-labelledby="game-title">
+        <div class="title-card">
+          <div class="eyebrow">A MINIATURE NIGHT JOURNEY</div>
+          <h1 id="game-title">书桌之上</h1><p class="en">ABOVE THE DESK</p>
+          <div class="title-rule" aria-hidden="true"><span></span></div>
+          <p class="intro">午夜，万物沉睡。<br/>只有桌上的世界，仍然醒着。</p>
+          <nav class="menu-actions" aria-label="旅程菜单">
+            <button id="start-btn" class="primary"><span class="menu-index">01</span><span class="menu-label">进入书桌</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+            <button id="continue-btn" class="secondary hidden"><span class="menu-index">02</span><span class="menu-label">继续上次旅程</span><span class="button-arrow" aria-hidden="true">→</span></button>
+          </nav>
+          <div class="menu-foot">请佩戴耳机，听见那些细小的声音</div>
+        </div>
+        <div class="scene-caption" aria-hidden="true"><span>CHAPTER I</span><span>第一夜 · 书桌</span></div>
+        <div class="enter-hint"><kbd>ENTER</kbd><span>让梦境开始</span></div>
+      </section>
+      <header id="hud" class="hidden" aria-label="游戏状态">
+        <div class="chapter"><span id="zone-index">01 / 09</span><strong id="zone-name">书堆之间</strong></div>
+        <div id="objective" class="objective">书架顶上那间亮灯的阁楼，就是终点</div>
+        <div class="hud-actions">
+          <span id="memory-count" class="collect-count" title="已收集的记忆残页"><span class="count-icon" aria-hidden="true">◇</span><span class="count-value">0 / 3</span></span>
+          <span id="letter-count" class="collect-count" title="已收集的信件"><span class="count-icon" aria-hidden="true">✉</span><span class="count-value">0 / 3</span></span>
+          <button id="pause-btn" class="icon-btn" aria-label="暂停游戏" title="暂停 · Esc">Ⅱ</button>
+        </div>
+      </header>
+      <section id="item-reveal" class="item-reveal hidden" role="dialog" aria-modal="true" aria-labelledby="item-reveal-title">
+        <div class="item-reveal-shell">
+          <div class="item-reveal-kicker">发现道具</div>
+          <div id="item-reveal-content"></div>
+          <button id="item-reveal-close" class="item-reveal-close"><span>收起，继续探索</span><kbd>E</kbd></button>
+          <div class="item-reveal-hint">也可以按 Esc 返回书桌</div>
+        </div>
+      </section>
+      <div id="prompt" class="prompt hidden" role="status" aria-live="polite"></div>
+      <div id="subtitle" class="subtitle hidden" role="status" aria-live="polite"></div>
+      <div id="controls" class="controls hidden" aria-label="操作方式">
+        <span class="control-item"><kbd>A D</kbd>移动</span>
+        <span class="control-item"><kbd>W S</kbd>纵深</span>
+        <span class="control-item"><kbd>SPACE</kbd>跳跃</span>
+        <span class="control-item"><kbd>E</kbd>互动</span>
+        <span class="control-item"><kbd>C</kbd>躲藏</span>
+      </div>
+      <div id="exposure" class="exposure hidden" role="status"><span>灯光正在发现你</span><div><i></i></div></div>
+      <section id="pause" class="screen" aria-labelledby="pause-title">
+        <div class="dialog">
+          <div class="eyebrow">MIDNIGHT, SUSPENDED</div><h2 id="pause-title">旅程暂停</h2>
+          <p class="pause-whisper">灯还亮着。<br/>书桌在等你回来。</p>
+          <nav class="menu-actions" aria-label="暂停菜单">
+            <button id="resume-btn" class="primary"><span class="menu-index">01</span><span class="menu-label">继续探索</span><span class="button-arrow" aria-hidden="true">→</span></button>
+            <button id="restart-btn" class="secondary"><span class="menu-index">02</span><span class="menu-label">重新开始</span><span class="button-arrow" aria-hidden="true">↺</span></button>
+          </nav>
+          <div class="pause-settings">
+            <label>音量 <input id="volume" type="range" min="0" max="1" step="0.05" value="0.65" /></label>
+            <label>镜头震动 <input id="shake" type="checkbox" checked /></label>
+          </div>
+          <div class="pause-hint"><kbd>ESC</kbd><span>回到书桌</span></div>
+        </div>
+      </section>
+      <section id="complete" class="screen" aria-labelledby="ending-title">
+        <div class="title-card">
+          <div class="eyebrow">THE LIGHT IS OUT</div><h1 id="ending-title">黎明前的回信。</h1>
+          <div class="title-rule" aria-hidden="true"><span></span></div>
+          <p id="ending-copy" class="intro">信件已经寄出。<br/>窗边的回信，在晨光里慢慢显现。</p>
+          <div id="journey-time"></div>
+          <nav class="menu-actions" aria-label="结局菜单"><button id="again-btn" class="primary"><span class="menu-index">01</span><span class="menu-label">再次踏上书桌</span><span class="button-arrow" aria-hidden="true">↗</span></button></nav>
+        </div>
+        <div class="scene-caption" aria-hidden="true"><span>DAWN, AT LAST</span><span>天亮了</span></div>
+      </section>
+      <section id="render-recovery" class="screen recovery" role="alert">
+        <div class="dialog"><div class="eyebrow">RENDERING PAUSED</div><h2>画面暂时中断</h2>
+          <p id="render-recovery-status" class="intro">浏览器释放了图形资源。旅程进度已经保留，不会自动反复刷新。</p>
+          <button id="render-recovery-btn" class="primary">重新载入并继续</button>
+        </div>
+      </section>
+      <div id="loading" class="loading"><div class="loading-title">书桌之上</div><span></span><p id="loading-status">正在唤醒书桌</p></div>
+    </div>
+  </body>
+</html>
+
+
