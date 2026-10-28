@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://wh1tzz.github.io/above-the-desk/"><img src="docs/readme/gameplay.gif" width="100%" alt="书桌之上 gameplay"></a>
+<a href="https://wh1tzz.github.io/above-the-desk/"><img src="docs/readme/gameplay.webp" width="100%" alt="书桌之上 gameplay"></a>
 
 # 书桌之上 · Above the Desk
 
